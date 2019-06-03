@@ -22,7 +22,14 @@ export class OtherHeroComponent implements OnInit {
 
   getHeroes(): void {
     this.heroService.getHeroes()
-      .subscribe(heroes => this.heroes = heroes);
+      .subscribe(heroes => {
+        this.heroes = heroes;
+        if (heroes.length >0){
+          this.selectedHero = heroes[0];
+          this.setWuweiInfo(this.selectedHero);
+        }
+        
+      });
   }
 
   onSelect(hero: Hero): void {
@@ -58,7 +65,7 @@ export class OtherHeroComponent implements OnInit {
                 { text: '政治', max: 100},
                 { text: '魅力', max: 100},
               ],
-              radius : 130
+              radius : 100
           }
       ],
       series : [
