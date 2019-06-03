@@ -5,10 +5,10 @@
 }
 
 .right-info{
-    width: 200px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 15px;
+    /* width: 150px; */
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    padding-top: 21px;
     /* text-align: center; */
 }
 
@@ -28,6 +28,7 @@
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .info-stuntDescription{
@@ -39,12 +40,12 @@
 }
 
 .info-item{
-    height: 45px;
-    line-height: 45px;
-    font-size: 18px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
 }
 .info-item label{
-    font-size: 16px;
+    font-size: 14px;
     padding: 0px 20px 0px 50px;
 }
 
@@ -53,8 +54,9 @@
 }
 
 .introduction-info{
-    width: 750px;
+    width: 620px;
     margin-top: 10px;
+    font-size: 14px;
     /* margin-left: 40px; */
 }
 
@@ -73,8 +75,8 @@
 }
 
 .wuwei-info{
-    width: 320px;
-    height: 300px;
+    width: 270px;
+    height: 260px;
     margin-left: 5px;
     margin-right: 5px;
 }

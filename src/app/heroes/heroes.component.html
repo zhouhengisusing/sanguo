@@ -1,6 +1,26 @@
 <div class="heroes-view">
   <div class="heroes-list">
     <h2>武将列表</h2>
+    <table >
+      <tr class="table-heard-tr">
+        <td colspan="3">基础信息</td><td colspan="5">属性</td><td colspan="2">特技</td>
+      </tr>
+      <tr class="table-heard-tr">
+        <td>ID</td><td>头像</td><td>名称</td><td>统</td><td>勇</td><td>智</td><td>政</td><td>魅</td><td>特技</td><td>特技说明</td>
+      </tr>
+      <tr *ngFor="let hero of heroes" class="table-info-tr">
+        <td>{{hero.id}}</td>
+        <td><img src="./../../assets/img/{{hero.img}}"/></td>
+        <td>{{hero.name}}({{hero.formword}})</td>
+        <td>{{hero.commander}}</td>
+        <td>{{hero.force}}</td>
+        <td>{{hero.intellect}}</td>
+        <td>{{hero.politics}}</td>
+        <td>{{hero.charm}}</td>
+        <td>{{hero.stunt}}</td>
+        <td>{{hero.stuntDescription}}</td>
+      </tr>
+    </table>
     <ul class="heroes">
       <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
         <a routerLink="/detail/{{hero.id}}">

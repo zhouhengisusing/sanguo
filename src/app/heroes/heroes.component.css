@@ -97,3 +97,21 @@ h2{
     height: 30px;
     margin-right: 10px;
   }
+
+  .table-info-tr td{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .table-info-tr td img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .table-info-tr:nth-child(odd){
+    background-color: antiquewhite;
+  }
+
+  .table-heard-tr{
+    text-align: center;
+  }
