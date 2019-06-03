@@ -27,7 +27,7 @@ export class OtherHeroComponent implements OnInit {
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
-    this.setWuweiInfo(hero);
+    this.setWuweiInfo(hero);  
   }
   
   setWuweiInfo(hero: Hero){
