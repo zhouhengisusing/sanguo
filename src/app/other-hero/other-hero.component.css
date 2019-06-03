@@ -1,0 +1,64 @@
+.main{
+    display: flex;
+}
+.heroes-list{
+    width: 15%;
+}
+
+.heroes{
+    padding-left: 0px;
+}
+
+.heroes li{
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    height: 35px;
+    display: flex;
+    border-radius: 4px;
+    background: #d4d1d1;
+    color: #000;
+    margin: 5px 0px 5px 0px;
+    color: #000;
+    font-size: 14px;
+}
+
+.heroes li.selected {
+    background-color: rgb(159, 207, 247) !important;
+    color: rgb(253, 253, 253);
+  }
+  .heroes li:hover {
+    /* color: #607D8B; */
+    background-color: rgb(211, 202, 202);
+    left: .1em;
+  }
+
+.item-info{
+    display: flex;
+    align-items: center;
+}
+
+.badge{
+    color: #ffffff;
+    display: block;
+    height: 35px;
+    width: 35px;
+    background: #537cb1;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.img-touxiang{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.hero-info{
+    width: 80%;
+    margin-left: 20px;
+}

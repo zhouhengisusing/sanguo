@@ -1,0 +1,47 @@
+/* DashboardComponent's private CSS styles */
+.item-list{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    font-size: 0px;
+    
+}
+
+h2{
+  text-align: center;
+}
+
+.col-1-4 {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 230px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.col-1-4:hover {
+  background-color: rgb(78, 141, 194);
+  /* box-shadow: 1px 1px 3px 5px #b3b0b0; */
+  top: -2px;
+  left: -1px;
+}
+
+.img-touxiang{
+  width: 200px;
+  height: 200px;
+}
+h4 {
+  margin: 0px;
+  line-height: 30px;
+  text-align: center;
+  color: #eee;
+  background-color: #00000050;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+}
+  

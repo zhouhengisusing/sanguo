@@ -1,0 +1,42 @@
+<div *ngIf="hero">
+  <div class="btn-view">
+      <button class="goBack-button" (click)="goBack()">go back</button>
+  </div>
+  <!-- <div><span>id: </span>{{hero.id}}</div> -->
+  <div>
+    <div class="info-name">
+      <h2>{{hero.name}}</h2>
+    </div>
+    <div class="hero-info-view">
+      <div class="img-info">
+          <img class="img-touxiang" src="./../../assets/img/{{hero.img}}"/>
+          <div class="info-stunt-name"><label>特技   :</label>{{hero.stunt}}({{hero.stuntType}})</div>
+          <p class="info-stuntDescription">{{hero.stuntDescription}}</p>
+      </div>
+      <div echarts [options]="options" class="wuwei-info" id="wuwei-info"></div>
+      <div class="right-info">
+          <div class="info-item"><label>统帅</label>{{hero.commander}}</div>
+          <div class="info-item"><label>武力</label>{{hero.force}}</div>
+          <div class="info-item"><label>智力</label>{{hero.intellect}}</div>
+          <div class="info-item"><label>政治</label>{{hero.politics}}</div>
+          <div class="info-item"><label>魅力</label>{{hero.charm}}</div>
+      </div>
+    </div>
+    <div class="introduction-info">
+      <p>{{hero.introduction}}</p>
+      
+    </div>
+  </div>
+  <!-- <div class="btn-view">
+      <div class="edit-name">
+          <input [(ngModel)]="hero.name" placeholder="name">
+      </div>
+      <button class="goBack-button" (click)="save()">save</button>
+  </div> -->
+  
+  
+      <!-- <input [(ngModel)]="hero.name" placeholder="name"/> -->
+    
+  
+
+</div>

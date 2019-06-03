@@ -1,0 +1,27 @@
+<div class="heroes-view">
+  <div class="heroes-list">
+    <h2>武将列表</h2>
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+        <a routerLink="/detail/{{hero.id}}">
+        <div class="item-info">
+            <span class="badge">{{hero.id}}</span>
+            <img class="img-touxiang" src="./../../assets/img/{{hero.img}}"/>
+            <div class="item name">{{hero.name}}({{hero.formword}})</div>
+            <div class="item nature">统：{{hero.commander}}</div>
+            <div class="item nature">勇：{{hero.force}}</div>
+            <div class="item nature">智：{{hero.intellect}}</div>
+            <div class="item nature">政：{{hero.politics}}</div>
+            <div class="item nature">魅：{{hero.charm}}</div>
+            <div class="item">{{hero.stunt}}</div>
+            <div class="item">{{hero.stuntDescription}}</div>
+        </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+</div>
+
+<app-messages></app-messages>

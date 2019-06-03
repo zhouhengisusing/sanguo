@@ -1,0 +1,17 @@
+<h2>武将列表</h2>
+<div class="main">
+  <div class="heroes-list">
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+        <div class="item-info">
+          <span class="badge">{{hero.id}}</span>
+          <img class="img-touxiang" src="./../../assets/img/{{hero.img}}"/>
+          <div class="item name">{{hero.name}}({{hero.formword}})</div>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <div class="hero-info">
+    <app-other-hero-info [hero]="selectedHero" [options]=options></app-other-hero-info>
+  </div>
+</div>
