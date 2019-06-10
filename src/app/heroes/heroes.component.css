@@ -93,25 +93,56 @@ h2{
   }
 
   .img-touxiang{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
   }
 
-  .table-info-tr td{
+  .table-list{
+    margin: 0px 0px 0px 10px;
+    /* border: 1px solid rgb(224, 219, 219); */
+    border-collapse: collapse;
+  }
+
+  .table-list tr,td{
+    text-align: center;
+    border: 1px solid rgb(224, 219, 219);
+  }
+
+  .table-info td{
     padding-right: 10px;  
     padding-left: 10px;
   }
 
-  .table-info-tr td img{
+  
+  .td-touxiang{
     width: 30px;
     height: 30px;
+    display: block;
   }
 
-  .table-info-tr:nth-child(odd){
-    background-color: antiquewhite;
+  .table-info:nth-child(odd){
+    background-color: rgb(213, 238, 248);
   }
 
-  .table-heard-tr{
-    text-align: center;
+  .table-info:hover{
+    background-color: rgb(175, 203, 214);
+  }
+
+  .table-info:nth-child(odd):hover{
+    background-color: rgb(196, 220, 230);
+  }
+
+  .td-aniu{
+    display: flex;
+    border: 0px solid rgb(224, 219, 219);
+  }
+
+  .td-aniu-img{
+    width: 25px;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    padding-top: 2px;
   }

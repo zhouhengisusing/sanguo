@@ -1,16 +1,16 @@
 <div class="heroes-view">
   <div class="heroes-list">
     <h2>武将列表</h2>
-    <table >
-      <tr class="table-heard-tr">
-        <td colspan="3">基础信息</td><td colspan="5">属性</td><td colspan="2">特技</td>
+    <table class="table-list">
+      <tr class="table-heard">
+        <td [attr.colspan]="1+1+1">基础信息</td><td [attr.colspan]="5">属性</td><td colspan="2">特技</td><td rowspan="2">查看</td>
       </tr>
-      <tr class="table-heard-tr">
+      <tr class="table-heard">
         <td>ID</td><td>头像</td><td>名称</td><td>统</td><td>勇</td><td>智</td><td>政</td><td>魅</td><td>特技</td><td>特技说明</td>
       </tr>
-      <tr *ngFor="let hero of heroes" class="table-info-tr">
+      <tr *ngFor="let hero of heroes" class="table-info" >
         <td>{{hero.id}}</td>
-        <td><img src="./../../assets/img/{{hero.img}}"/></td>
+        <td><img class="td-touxiang" src="./../../assets/img/{{hero.img}}"/></td>
         <td>{{hero.name}}({{hero.formword}})</td>
         <td>{{hero.commander}}</td>
         <td>{{hero.force}}</td>
@@ -19,6 +19,10 @@
         <td>{{hero.charm}}</td>
         <td>{{hero.stunt}}</td>
         <td>{{hero.stuntDescription}}</td>
+        <td class="td-aniu">
+          <a routerLink="/detail/{{hero.id}}"><img class="td-aniu-img" src="./../../assets/anniu/查看.png"/></a>
+              <img (click)="ondelete(hero.id)" class="td-aniu-img" src="./../../assets/anniu/删除筛选项.png" />  
+        </td>
       </tr>
     </table>
     <ul class="heroes">

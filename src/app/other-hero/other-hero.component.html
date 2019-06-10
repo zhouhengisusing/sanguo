@@ -12,6 +12,6 @@
     </ul>
   </div>
   <div class="hero-info">
-    <app-other-hero-info [hero]="selectedHero" [options]=options></app-other-hero-info>
+    <app-other-hero-info (deleteRequest)="deleteItem($event)" [hero]="selectedHero" [options]=options></app-other-hero-info>
   </div>
 </div>

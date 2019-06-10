@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Hero } from '../hero';
 
 @Component({
@@ -11,12 +11,17 @@ import { Hero } from '../hero';
 export class OtherHeroInfoComponent implements OnInit {
   @Input() hero: Hero;
   @Input() options:any;
+  @Output() deleteRequest = new EventEmitter<Hero>();
 
   constructor() { }
 
+
+
   ngOnInit() {
+
   }
 
-  
-
+  onDelete(){
+    this.deleteRequest.emit(this.hero);
+  }
 }

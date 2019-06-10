@@ -24,4 +24,7 @@
   </div>
 </div>
 
-<input *ngIf="hero" [(ngModel)]="hero.name" placeholder="name">
+<label class="name-titel" for="hero-name">姓名</label><input *ngIf="hero" name="hero-name" [(ngModel)]="hero.name" placeholder="name">
+<br/>
+
+<button class="delete-btn" (click)="onDelete()">delete</button>

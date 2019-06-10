@@ -16,6 +16,15 @@ export class OtherHeroComponent implements OnInit {
 
   constructor(private heroService: HeroService) { }
 
+  ngOnChanges(){
+    console.log("----------");
+    console.log("ngOnChanges()--");
+  }
+
+  // ngOnInit() {
+  //   console.log("ngOnInit()--");
+  // }
+
   ngOnInit() {
     this.getHeroes();
   }
@@ -30,6 +39,19 @@ export class OtherHeroComponent implements OnInit {
         }
         
       });
+  }
+
+  deleteItem(selecthero:Hero){
+    this.heroes.forEach((hero,key)=>{
+      if (hero.id == selecthero.id){
+        this.heroes.splice(key,1);
+      }
+    });
+    if (this.heroes.length > 0){
+      this.selectedHero = this.heroes[0];
+      this.setWuweiInfo(this.selectedHero);
+    }
+    
   }
 
   onSelect(hero: Hero): void {

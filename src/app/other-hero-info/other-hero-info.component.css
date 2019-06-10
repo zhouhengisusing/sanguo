@@ -84,3 +84,12 @@
 h2{
     margin: 16px 0px 16px 15px;
 }
+
+.name-titel{
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.delete-btn{
+    margin-top: 10px;
+}
