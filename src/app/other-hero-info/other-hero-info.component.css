@@ -44,6 +44,8 @@
     line-height: 38px;
     font-size: 14px;
 }
+
+
 .info-item label{
     font-size: 14px;
     padding: 0px 20px 0px 50px;
@@ -92,4 +94,5 @@ h2{
 
 .delete-btn{
     margin-top: 10px;
+    
 }
