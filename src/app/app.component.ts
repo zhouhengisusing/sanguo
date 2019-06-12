@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '三国志11';
+  title = '练习';
+  selectStr = "dashboard"
+
+  onSelect(str){
+    this.selectStr = str;
+  }
 }

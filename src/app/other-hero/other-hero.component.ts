@@ -16,15 +16,6 @@ export class OtherHeroComponent implements OnInit {
 
   constructor(private heroService: HeroService) { }
 
-  ngOnChanges(){
-    console.log("----------");
-    console.log("ngOnChanges()--");
-  }
-
-  // ngOnInit() {
-  //   console.log("ngOnInit()--");
-  // }
-
   ngOnInit() {
     this.getHeroes();
   }

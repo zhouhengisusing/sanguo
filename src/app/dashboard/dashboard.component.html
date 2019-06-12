@@ -1,7 +1,7 @@
 <h2>武将列表</h2>
 <div class="item-list">
   <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}" class="col-1-4">
-    <div class="say-item"><p>{{hero.name}}在此，愿遵将军将令</p></div>
+    <div class="say-item"><span>{{hero.name}}在此，愿遵将军将令</span></div>
     <img class="img-touxiang" src="./../../assets/img/{{hero.img}}"/>
     
     <h4>{{hero.name}}</h4>

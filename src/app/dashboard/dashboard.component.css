@@ -12,9 +12,12 @@ h2{
 }
 
 .col-1-4 {
+  display: block;
   width: 180px;
-  margin-bottom: 15px;
-  margin-right: 15px;
+  margin: 10px;
+  padding: 2px;
+  text-decoration: none;
+  border: 1px solid rgb(220, 221, 221);
 }
 
 .img-touxiang{
@@ -33,32 +36,13 @@ h4 {
   font-size: 16px;
 }
 
-/* .say-item{
-  display: none;
-  position: absolute;
-  background-color: #b8b5b5;
-  z-index: 999;
-  width: 100%;
-  height: 30px;
-  top: 150px;
-  border: 1px solid blue;
-  border-radius: 8px;
-} */
-
-.say-item p{
-  color: rgb(253, 251, 251);
-  line-height: 30px;
-  text-align: center;
-  font-size: 12px;
-  display: inline;
-  padding-left: 5px;
-}
-
 .col-1-4:hover {
   cursor: pointer;
   position: relative;
   top: 2px;
   left: 1px;
+  border: 1px solid rgb(177, 199, 186);
+  box-shadow:0 0 10px rgb(226, 247, 170); 
 }
 
 .col-1-4:hover h4{
@@ -80,6 +64,15 @@ h4 {
   border-radius: 8px;
   top: -31px;
 }
+
+.say-item span{
+  display: inline;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
 .say-item:after{
   content: "";
   position: absolute;
