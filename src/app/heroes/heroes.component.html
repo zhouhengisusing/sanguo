@@ -20,8 +20,8 @@
         <td>{{hero.stunt}}</td>
         <td>{{hero.stuntDescription}}</td>
         <td class="td-aniu">
-          <a routerLink="/detail/{{hero.id}}"><img class="td-aniu-img" src="./../../assets/anniu/查看.png"/></a>
-              <img (click)="ondelete(hero.id)" class="td-aniu-img" src="./../../assets/anniu/删除筛选项.png" />  
+          <a routerLink="/detail/{{hero.id}}"><img class="td-aniu-img"  src="./../../assets/anniu/查看.png"/></a>
+          <img class="td-aniu-img" (click)="ondelete(hero.id)"  src="./../../assets/anniu/删除筛选项.png" />  
         </td>
       </tr>
     </table>

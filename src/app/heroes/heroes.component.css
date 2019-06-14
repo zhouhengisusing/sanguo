@@ -136,13 +136,17 @@ h2{
   .td-aniu{
     display: flex;
     border: 0px solid rgb(224, 219, 219);
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
   }
 
   .td-aniu-img{
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     padding-left: 10px;
     padding-right: 10px;
     display: block;
     padding-top: 2px;
+    cursor:pointer;
   }

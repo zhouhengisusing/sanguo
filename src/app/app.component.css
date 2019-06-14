@@ -66,3 +66,7 @@ h1 {
     color: white;
     background-color: rgb(167, 172, 167);
 }
+
+.router-view{
+  background-color: rgb(241, 240, 239);
+}

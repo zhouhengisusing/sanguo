@@ -1,15 +1,25 @@
+.all-info-view{
+    color: #000000;
+    padding-bottom: 10px;
+    
+}
+
 .img-info{
     width: 210px;
     /* margin-left: 40px; */
     margin-right: 5px;
+    padding: 2px;
+    border: 1px solid rgb(155, 155, 155);
 }
 
 .right-info{
     /* width: 150px; */
     /* margin-left: 5px;
     margin-right: 5px; */
-    padding-top: 21px;
+    /* padding-top: 21px; */
     /* text-align: center; */
+    padding: 2px;
+    border: 1px solid rgb(155, 155, 155);
 }
 
 
@@ -43,23 +53,30 @@
     height: 38px;
     line-height: 38px;
     font-size: 14px;
+    padding-right: 30px;
 }
 
 
 .info-item label{
     font-size: 14px;
-    padding: 0px 20px 0px 50px;
+    padding: 0px 20px 0px 30px;
 }
 
 .hero-info-view{
     display: flex;
+    padding-left: 10px;
+    /* padding: 2px;
+    border: 1px solid rgb(158, 157, 157) */
 }
 
 .introduction-info{
-    width: 620px;
+    width: 630px;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     font-size: 14px;
-    /* margin-left: 40px; */
+    padding: 2px 5px 2px 5px;
+    border: 1px solid rgb(155, 155, 155);
 }
 
 .btn-view{
@@ -81,6 +98,8 @@
     height: 260px;
     margin-left: 5px;
     margin-right: 5px;
+    padding: 2px;
+    border: 1px solid rgb(155, 155, 155);
 }
 
 h2{

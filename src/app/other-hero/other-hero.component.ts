@@ -59,31 +59,27 @@ export class OtherHeroComponent implements OnInit {
       tooltip : {
           trigger: 'axis'
       },
-      toolbox: {
-          show : false,
-          feature : {
-              mark : {show: true},
-              dataView : {show: true, readOnly: false},
-              restore : {show: true},
-              saveAsImage : {show: true}
-          }
-      },
-      calculable : false,
+      calculable : true,
       polar : [
           {
-              indicator : [
-                { text: '统帅', max: 100},
-                { text: '武力', max: 100},
-                { text: '智力', max: 100},
-                { text: '政治', max: 100},
-                { text: '魅力', max: 100},
-              ],
-              radius : 100
+            indicator : [
+              { text: '统帅', max: 100},
+              { text: '武力', max: 100},
+              { text: '智力', max: 100},
+              { text: '政治', max: 100},
+              { text: '魅力', max: 100},
+            ],
+            radius : 90,
+            name:{
+              textStyle: {
+                  color: '#f30707',
+              }
+            },
           }
       ],
       series : [
           {
-              name: '',
+              name: hero.name,
               type: 'radar',
               itemStyle: {
                   normal: {

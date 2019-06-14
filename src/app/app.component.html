@@ -5,12 +5,15 @@
     <a routerLink="/heroes">Heroes</a>
     <a routerLink="/other-hero">other Heroes</a>
 </nav> -->
-
+<div class="router-view">
 <ul class="nav-ul">
     <li class="nav-ul-li"><a [class.active]="'dashboard' === selectStr" (click)="onSelect('dashboard')" routerLink="/dashboard">Dashboard</a></li>
     <li class="nav-ul-li"><a [class.active]="'heroes' === selectStr" (click)="onSelect('heroes')" routerLink="/heroes">Heroes</a></li>
     <li class="nav-ul-li"><a [class.active]="'other-hero' === selectStr" (click)="onSelect('other-hero')" routerLink="/other-hero">other Heroes</a></li>
 </ul>
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
+</div>
+
+
 
