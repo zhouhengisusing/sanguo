@@ -17,6 +17,10 @@ import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgM
 import { NgxEchartsModule } from 'ngx-echarts';
 import { OtherHeroComponent } from './other-hero/other-hero.component';
 import { OtherHeroInfoComponent } from './other-hero-info/other-hero-info.component';
+import { LoginComponent } from './login/login.component';
+
+import { LoginModule } from './login/login.module';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { OtherHeroInfoComponent } from './other-hero-info/other-hero-info.compon
     MessagesComponent,
     DashboardComponent,
     OtherHeroComponent,
-    OtherHeroInfoComponent
+    OtherHeroInfoComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
